@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample HTML Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+    nav {
+      background-color: #444;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+    }
+    main {
+      padding: 2em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      margin-top: 2em;
+    }
+  </style>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "35ea8f8f-cb82-4cca-8577-3f04adfce81a",
+      safari_web_id: "web.onesignal.auto.5f8d50ad-7ec3-4f1c-a2de-134e8949294e",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Sample Page</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <h2>About This Page</h2>
+  <p>This is a simple HTML page to demonstrate basic structure and styling.</p>
+  <img src="https://via.placeholder.com/600x200" alt="Sample Image">
+</main>
+
+<footer>
+  <p>&copy; 2025 Sample Website</p>
+</footer>
+
+</body>
+</html>
 
